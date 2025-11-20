@@ -58,4 +58,12 @@ gs2025/comando
 | `< 20cm` | Buzzer toca + alerta MQTT |
 -------------------------------------------
 
+## 🛠 Componentes Utilizados
 
+-ESP32 DevKit
+-Sensor DHT22
+-Sensor ultrassônico HC-SR04
+-LED
+-Resistor 220 Ω
+-Jumpers
+-Protoboard
