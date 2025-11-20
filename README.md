@@ -67,7 +67,9 @@ gs2025/comando
 - Resistor 220 Ω
 - Jumpers  
 - Protoboard
--------------------------
+  
+---
+
 ## Ligações do Circuito
 
 ##DHT22
