@@ -100,4 +100,6 @@ LED
 
 
 Link Wokwi - https://wokwi.com/projects/448161179566778369
-  
+
+  <img width="1038" height="515" alt="image" src="https://github.com/user-attachments/assets/32c940b1-983b-4a01-825f-24bf4b7ba5c0" />
+
