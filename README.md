@@ -60,8 +60,6 @@ gs2025/comando
 
 ## 🛠 Componentes Utilizados
 
--ESP32 DevKit
-
 - ESP32 DevKit  
 - Sensor DHT22  
 - Sensor ultrassônico HC-SR04  
@@ -69,4 +67,33 @@ gs2025/comando
 - Resistor 220 Ω
 - Jumpers  
 - Protoboard
+
+## Ligações do Circuito
+
+##DHT22
+
+| Pino do Sensor | ESP32   |
+| -------------- | ------- |
+| VCC            | 3.3V    |
+| DATA           | GPIO 15 |
+| GND            | GND     |
+
+##HC-SR04
+
+| Pino do Sensor | ESP32                           |
+| -------------- | ------------------------------- |
+| VCC            | 5V                              |
+| TRIG           | GPIO 5                          |
+| ECHO           | GPIO 18 (com divisor resistivo) |
+| GND            | GND                             |
+
+##LED
+
+| Componente           | Pino                  |
+| -------------------- | --------------------- |
+| Perna longa (anodo)  | GPIO 2                |
+| Perna curta (catodo) | GND via resistor 220Ω |
+
+
+##Link Wokwi - https://wokwi.com/projects/448161179566778369
   
