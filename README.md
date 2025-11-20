@@ -60,7 +60,7 @@ gs2025/comando
 
 
 
-## 🛠 Componentes Utilizados
+🛠 Componentes Utilizados
 
 - ESP32 DevKit  
 - Sensor DHT22  
@@ -72,9 +72,9 @@ gs2025/comando
   
 ---
 
-## Ligações do Circuito
+Ligações do Circuito
 
-##DHT22
+DHT22
 
 | Pino do Sensor | ESP32   |
 | -------------- | ------- |
@@ -82,7 +82,7 @@ gs2025/comando
 | DATA           | GPIO 15 |
 | GND            | GND     |
 
-##HC-SR04
+HC-SR04
 
 | Pino do Sensor | ESP32                           |
 | -------------- | ------------------------------- |
@@ -91,7 +91,7 @@ gs2025/comando
 | ECHO           | GPIO 18 (com divisor resistivo) |
 | GND            | GND                             |
 
-##LED
+LED
 
 | Componente           | Pino                  |
 | -------------------- | --------------------- |
@@ -99,5 +99,5 @@ gs2025/comando
 | Perna curta (catodo) | GND via resistor 220Ω |
 
 
-##Link Wokwi - https://wokwi.com/projects/448161179566778369
+Link Wokwi - https://wokwi.com/projects/448161179566778369
   
