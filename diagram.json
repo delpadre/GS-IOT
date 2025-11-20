@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "author": "Rafael Jorge Del Padre ",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard", "id": "bb1", "top": 54.6, "left": -246.8, "attrs": {} },
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 446.44, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -3.6,
+      "left": -34.6,
+      "attrs": { "color": "orange" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -151.2,
+      "left": 165,
+      "attrs": { "volume": "0.1" }
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": -113.7,
+      "left": -224.9,
+      "attrs": { "distance": "105" }
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -134.1,
+      "left": 23.4,
+      "attrs": { "humidity": "19.5", "temperature": "26.7" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 128.75,
+      "left": -19.2,
+      "attrs": { "value": "220000" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "ultrasonic1:GND", "bb1:tn.8", "black", [ "v0" ] ],
+    [ "esp:GND.1", "bb1:tn.50", "black", [ "h-9.45", "v-76.7" ] ],
+    [ "ultrasonic1:ECHO", "esp:18", "green", [ "h-0.8", "v19.2", "h691.2", "v105.6" ] ],
+    [ "esp:5V", "ultrasonic1:VCC", "red", [ "h-700.65", "v-211.2", "h96" ] ],
+    [ "ultrasonic1:TRIG", "esp:5", "green", [ "v57.6", "h710", "v76.8" ] ],
+    [ "dht1:SDA", "esp:15", "green", [ "v0" ] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "dht1:GND", "bb1:tn.25", "black", [ "v0" ] ],
+    [ "bz1:2", "bb1:tn.36", "green", [ "v0" ] ],
+    [ "bz1:1", "esp:32", "green", [ "v0" ] ],
+    [ "esp:4", "r1:2", "green", [ "h0" ] ],
+    [ "led1:A", "bb1:tn.18", "green", [ "v0" ] ],
+    [ "led1:C", "bb1:22t.a", "green", [ "v0" ] ],
+    [ "r1:1", "bb1:22t.d", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:28t.d", "", [ "$bb" ] ]
+  ],
+  "dependencies": {}
+}
