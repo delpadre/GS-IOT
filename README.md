@@ -58,6 +58,8 @@ gs2025/comando
 | `< 20cm` | Buzzer toca + alerta MQTT |
 -------------------------------------------
 
+---
+
 ## 🛠 Componentes Utilizados
 
 - ESP32 DevKit  
