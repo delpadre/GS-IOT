@@ -61,6 +61,7 @@ gs2025/comando
 ## 🛠 Componentes Utilizados
 
 -ESP32 DevKit
+
 -Sensor DHT22
 -Sensor ultrassônico HC-SR04
 -LED
