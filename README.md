@@ -62,9 +62,11 @@ gs2025/comando
 
 -ESP32 DevKit
 
--Sensor DHT22
--Sensor ultrassônico HC-SR04
--LED
--Resistor 220 Ω
--Jumpers
--Protoboard
+- ESP32 DevKit  
+- Sensor DHT22  
+- Sensor ultrassônico HC-SR04  
+- LED  
+- Resistor 220 Ω
+- Jumpers  
+- Protoboard
+  
